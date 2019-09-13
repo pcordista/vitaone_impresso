@@ -1,0 +1,61 @@
+/* MOBILE/TABLET RESPONSIVE */
+
+@media (max-width: 700px) {
+    /*********************\ CAPA /*********************/
+    .capa {
+        background-image: url('../img/capa-mobile.jpg');
+    }
+    /*********************\ CLIENTE /*********************/
+    .equipe img {
+        width: 20%;
+        margin: 0 2%
+    }
+    /*********************\ MAIN /*********************/
+    .price-suporte-table {
+        width: 100%;
+        margin-left: 00%;
+        margin-bottom: 8rem;
+    }
+    .table-contrato>th:nth-child(1) {
+        width: inherit !important
+    }
+    .table-contrato>th:nth-child(2) {
+        width: inherit !important
+    }
+    .table-contrato>th:nth-child(3) {
+        width: inherit !important
+    }
+    /*********************\ FOOTER /*********************/
+    .footer-content {
+        left: 0%;
+        width: 100%;
+        text-align: center
+    }
+}
+
+/* MOBILE ONLY */
+
+@media (max-width: 480px) {
+    /*********************\ FOOTER /*********************/
+    .footer {
+        font-size: 1rem;
+        text-align: center;
+        height: 120px;
+    }
+}
+
+@media (max-width: 900px) {
+    /*********************\ MAIN /*********************/
+    .price-suporte-table {
+        width: 100%;
+        margin-left: 00%;
+        margin-bottom: 8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    /*********************\ FOOTER /*********************/
+    .footer {
+        height: 200px;
+    }
+}
