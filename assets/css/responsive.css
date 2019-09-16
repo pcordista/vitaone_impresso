@@ -1,6 +1,17 @@
+.nav-banner-mobile {
+    display: none
+}
+
+.nav-banner-desktop {
+    display: block
+}
+
 /* MOBILE/TABLET RESPONSIVE */
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
     /*********************\ CAPA /*********************/
     .capa {
         background-image: url('../img/capa-mobile.jpg');
@@ -31,16 +42,57 @@
         width: 100%;
         text-align: center
     }
+    /*********************\ LANDING PAGE /*********************/
+    .nav-banner-mobile {
+        display: block
+    }
+    .nav-banner-desktop {
+        display: none
+    }
+    .landing-chamada-img>div:first-child>img {
+        width: 150px;
+    }
+    .cliente-nome-destaque {
+        font-size: 3rem
+    }
+    .proposta-apresentacao {
+        font-size: 2.3rem;
+        line-height: 2.3rem;
+    }
+    .landing-chamada-img > div {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    .landing-footer {
+        background-image: url('../img/landing-bg-footer-mobile.jpg');
+    }
 }
 
 /* MOBILE ONLY */
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     /*********************\ FOOTER /*********************/
     .footer {
         font-size: 1rem;
         text-align: center;
         height: 120px;
+    }
+    /*********************\ LANDING PAGE /*********************/
+    .nav-right, .nav-left {
+        width: 100%;
+        display: flex;
+        justify-content: center
+    }
+    .price-table {
+        width: 80%;
+        margin-left: 20%;
+        margin-bottom: 4rem;
+    }
+    .proposta-content {
+        width: 80%;
+        right: 10%;
     }
 }
 
